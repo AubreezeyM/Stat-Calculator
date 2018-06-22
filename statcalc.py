@@ -1,10 +1,10 @@
 """As expected, imports at the top.  I'll be explaining what the are next to them."""
-from sys import argv #Commandline arguments.  Only needed for the initial check.
-from pprint import pprint #"Pretty" print.  It formats lists and dicts and such to be much easier to read in the console
+from sys import argv            #Commandline arguments.  Only needed for the initial check.
+from pprint import pprint       #"Pretty" print.  It formats lists and dicts and such to be much easier to read in the console
 
-import argparse #handles commandline flags and arguments
-import Pokemon #Pokemon.py, just the class file
-import maths #maths.py, the calculate_stats function
+import argparse                 #handles commandline flags and arguments
+import Pokemon                  #Pokemon.py, just the class file
+import maths                    #maths.py, the calculate_stats function
 
 """Originally I had thought I would need *a lot* more in that class and maths.py, but I ended up shortening it
 to one line.  The fact they aren't part of the main file is just a remnant of that."""
@@ -46,7 +46,7 @@ else:
     'type' is the type to cast to, obviously.
     
     'nargs' = number of args that flag needs afterwards"""
-    
+
     parser = argparse.ArgumentParser(description="Handle Pokemon from commandline")
     parser.add_argument('name', metavar="[name]", type=str)
     parser.add_argument('-ev', '--EVs', metavar='EV', type=int, nargs=6)

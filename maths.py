@@ -1,5 +1,5 @@
-import math #the py3 standard math library
-import Pokemon #Pokemon.py
+import math             #the py3 standard math library
+import Pokemon          #Pokemon.py
 
 
 """This beast.  You're gonna have to go on bulbapedia for the innerworkings of all the algorithms, but

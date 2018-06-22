@@ -1,9 +1,9 @@
 #More imports! ^-^
 
-import requests #A very simple http request library.  Built in to py3
-import json # Needed to handle .json data, obviously.
-import sys #System calls.  I use it for sys.exit() incase the user has a typo.
-from pprint import pprint #Pretty print again.  I just luvs it.
+import requests                 #A very simple http request library.  Built in to py3
+import json                     # Needed to handle .json data, obviously.
+import sys                      #System calls.  I use it for sys.exit() incase the user has a typo.
+from pprint import pprint       #Pretty print again.  I just luvs it.
 
 class Pokemon():
     """So... this class.  I'll get into the complicated stuff after, but I handle basically everything needed
