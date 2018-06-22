@@ -19,7 +19,10 @@ def calculate_stats(Pokemon: Pokemon.Pokemon, evs: dict, ivs: dict):
     #a fully formatted dict of every stat I will need.  Handles HP separately due to a different algorithm.
     for stat in evs:
         if stat == "hp":
-            hp = math.floor((int((2 * Pokemon.hp + ivs['hp'] + int(evs['hp'] / 4)) * Pokemon.level) / 100) + Pokemon.level + 10)
+            if Pokemon.name == "shedinja":
+                hp = 1
+            else:
+                hp = math.floor((int((2 * Pokemon.hp + ivs['hp'] + int(evs['hp'] / 4)) * Pokemon.level) / 100) + Pokemon.level + 10)
             final_stats['hp'] = hp
         else:
             #temp var for.. some reason.  Too scared to take it out.  I'm tired of working on this thing.
