@@ -24,7 +24,7 @@ if len(argv) == 1:
     of the first argument.  The .split() is to actually make it a list, as the input itself is a string
     of space separated characters, as long as the user can follow directions.'''
 
-    list_evs = list(map(int, input('Enter the Pokémon\'s IVs (space separated.): ').split()))
+    list_evs = list(map(int, input('Enter the Pokémon\'s EVs (space separated.): ').split()))
     list_ivs = list(map(int, input('Enter the Pokémon\'s IVs (space separated.): ').split()))
 
     #Here I just turn the list into a correctly formatted dicttionary
